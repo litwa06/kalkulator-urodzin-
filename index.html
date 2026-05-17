@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Urodzin</title>
+  </head>
+  <body class="p-8">
+    <h1 class="text-2xl font-bold text-primary mb-6">Kalkulator Urodzin</h1>
+    
+    <form id="birthday-form" class="mb-4">
+      <label for="bday" class="block mb-2 font-medium">Podaj datę urodzenia:</label>
+      <input type="date" id="bday" required class="border border-gray-300 p-2 mb-4 block rounded">
+      
+      <button type="submit" class="bg-blue-300 p-4 rounded font-bold hover:bg-blue-400 transition">
+        Oblicz
+      </button>
+    </form>
+
+    <dialog id="result-dialog" class="bg-gray-200 text-red-600 p-6 rounded-lg shadow-xl relative backdrop:bg-black/50 min-w-[300px]">
+      <button id="close-dialog" class="absolute top-2 right-3 font-bold text-xl cursor-pointer">&times;</button>
+      <div id="dialog-content" class="mt-4 text-center"></div>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
